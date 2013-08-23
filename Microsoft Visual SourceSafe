@@ -14,6 +14,26 @@ tipos de organizações possam trabalhar em várias versões do projeto ao mesmo
 benéfica em um ambiente de desenvolvimento de software, onde ele é usado ao manter versões de código paralelas.Entretanto, 
 o produto pode ser usado para manter arquivos para qualquer outro tipo de equipe.
 
+Visão geral
+
+SourceSafe não foi inicialmente uma fonte de gerenciamento de código de cliente / servidor,
+mas sim uma só SCM local. Arquitetonicamente, isso serve como uma força e uma fraqueza do projeto, 
+dependendo do ambiente que é utilizado dentro Ele permite que um único usuário do sistema a ser criado 
+com menos configuração do que a de alguns outros sistemas de SCM. Além disso, o processo de backup pode ser tão 
+simples quanto copiar todo o conteúdo de uma única árvore de diretórios. Para ambientes multi-usuário, no entanto, 
+ele não tem muitas características importantes encontrados em outros produtos do SCM, 
+incluindo suporte para cometer atômica de vários arquivos (CVS tem o mesmo problema, uma vez que é construída sobre a RCS originais). 
+SourceSafe herda sua funcionalidade compartilhada usando o acesso ao sistema de arquivo remoto direto a todos os arquivos no repositório. 
+Isto, juntamente com um bug onde o código está usando a memória de idade após uma chamada para realocar, 
+são fatores que contribuem para bancos de dados por SS às vezes vão mal.
+
+Começando com VSS 2005, a Microsoft adicionou um modo de cliente-servidor. Neste modo, os clientes não precisam ter acesso a um compartilhamento SMB, 
+onde eles podem danificar o banco de dados SS escrever. 
+Em vez disso, os arquivos devem ser acessados ​​através das ferramentas de cliente do VSS -. 
+O cliente VSS do Windows, a ferramenta de linha de comando VSS, ou algum aplicativo que se 
+integra com ou emula essas ferramentas cliente
+
+
 Benefícios:
 Ajuda a proteger sua equipe de perdas acidentais de arquivo.
 Permite rastreamento a versões anteriores de um arquivo.
