@@ -3,45 +3,30 @@
                                                       História
 
 SourceSafe foi originalmente criado por uma empresa chamada One Tree Software. 
-One Tree SourceSafe havia passado por vários lançamentos em sua 1.x para 2.x ciclos, 
-apoiando DOS, OS / 2 (com uma GUI Presentation Manager), Windows, Windows NT, Mac e Unix. 
-Quando a Microsoft comprou OneTree em 1994,que imediatamente deixou de desenvolvimento em todas as versões, 
-exceto para Windows. Microsoft "Visual SourceSafe 3.1", a 16-bit somente remarcadas versão, One Tree 3.0 Windows 
-foi brevemente disponível antes de a Microsoft lançou a versão 4.0.
+One Tree SourceSafe havia passado por vários lançamentos em sua 1.x para 2.x ciclos, apoiando DOS, OS / 2 (com uma
+GUI Presentation Manager), Windows, Windows NT, Mac e Unix. Quando a Microsoft comprou OneTree em 1994,que imediatamente deixou de desenvolvimento em todas as versões, exceto para Windows. Microsoft "Visual SourceSafe 3.1", a 16-bit somente remarcadas versão, One Tree 3.0 Windows foi brevemente disponível antes de a Microsoft lançou a versão 4.0.
 
-Microsoft Visual SourceSafe é uma versão de sistema de controle da Microsoft em nível de arquivo que permite que vários 
-tipos de organizações possam trabalhar em várias versões do projeto ao mesmo tempo.Essa funcionalidade é particularmente 
-benéfica em um ambiente de desenvolvimento de software, onde ele é usado ao manter versões de código paralelas.Entretanto, 
-o produto pode ser usado para manter arquivos para qualquer outro tipo de equipe.
+Microsoft Visual SourceSafe é uma versão de sistema de controle da Microsoft em nível de arquivo que permite que vários tipos de organizações possam trabalhar em várias versões do projeto ao mesmo tempo.Essa funcionalidade é particularmente benéfica em um ambiente de desenvolvimento de software, onde ele é usado ao manter versões de código paralelas.Entretanto, o produto pode ser usado para manter arquivos para qualquer outro tipo de equipe.
 
-Visão geral
+                                                    Visão geral
 
-SourceSafe não foi inicialmente uma fonte de gerenciamento de código de cliente / servidor,
-mas sim uma só SCM local. Arquitetonicamente, isso serve como uma força e uma fraqueza do projeto, 
-dependendo do ambiente que é utilizado dentro Ele permite que um único usuário do sistema a ser criado 
-com menos configuração do que a de alguns outros sistemas de SCM. Além disso, o processo de backup pode ser tão 
-simples quanto copiar todo o conteúdo de uma única árvore de diretórios. Para ambientes multi-usuário, no entanto, 
-ele não tem muitas características importantes encontrados em outros produtos do SCM, 
-incluindo suporte para cometer atômica de vários arquivos (CVS tem o mesmo problema, uma vez que é construída sobre a RCS originais). 
-SourceSafe herda sua funcionalidade compartilhada usando o acesso ao sistema de arquivo remoto direto a todos os arquivos no repositório. 
-Isto, juntamente com um bug onde o código está usando a memória de idade após uma chamada para realocar, 
-são fatores que contribuem para bancos de dados por SS às vezes vão mal.
+SourceSafe não foi inicialmente uma fonte de gerenciamento de código de cliente / servidor,mas sim uma só SCM local. Arquitetonicamente, isso serve como uma força e uma fraqueza do projeto, dependendo do ambiente que é utilizado dentro Ele permite que um único usuário do sistema a ser criado com menos configuração do que a de alguns outros sistemas de SCM. Além disso, o processo de backup pode ser tão simples quanto copiar todo o conteúdo de uma única árvore de diretórios. Para ambientes multi-usuário, no entanto, ele não tem muitas características importantes encontrados em outros produtos do SCM, incluindo suporte para cometer atômica de vários arquivos (CVS tem o mesmo problema, uma vez que é construída sobre a RCS originais). SourceSafe herda sua funcionalidade compartilhada usando o acesso ao sistema de arquivo remoto direto a todos os arquivos no repositório. Isto, juntamente com um bug onde o código está usando a memória de idade após uma chamada para realocar, são fatores que contribuem para bancos de dados por SS às vezes vão mal.
 
-Começando com VSS 2005, a Microsoft adicionou um modo de cliente-servidor. Neste modo, os clientes não precisam ter acesso a um compartilhamento SMB, 
-onde eles podem danificar o banco de dados SS escrever. 
-Em vez disso, os arquivos devem ser acessados ​​através das ferramentas de cliente do VSS -. 
-O cliente VSS do Windows, a ferramenta de linha de comando VSS, ou algum aplicativo que se 
-integra com ou emula essas ferramentas cliente
+Começando com VSS 2005, a Microsoft adicionou um modo de cliente-servidor. Neste modo, os clientes não precisam ter acesso a um compartilhamento SMB, onde eles podem danificar o banco de dados SS escrever. Em vez disso, os arquivos devem ser acessados ​​através das ferramentas de cliente do VSS -. O cliente VSS do Windows, a ferramenta de linha de comando VSS, ou algum aplicativo que se integra com ou emula essas ferramentas cliente
 
 
-Benefícios:
-Ajuda a proteger sua equipe de perdas acidentais de arquivo.
-Permite rastreamento a versões anteriores de um arquivo.
-Suporta branching, compartilhamento, mesclagem, e gerenciamento versões de arquivo.
-Rastreia versões de projetos inteiros.
-Rastreia código modular (um arquivo que está reutilizado, ou compartilhado, por vários projetos).
+                                                    Benefícios
+Ajuda a proteger sua equipe de perdas acidentais de arquivo.Permite rastreamento a versões anteriores de um arquivo.
+Suporta branching, compartilhamento, mesclagem, e gerenciamento versões de arquivo.Rastreia versões de projetos inteiros.Rastreia código modular (um arquivo que está reutilizado, ou compartilhado, por vários projetos).
 
-Controle de Versão e Compartilhamento de Arquivo
+                                                     Crítica
+
+Estabilidade do Visual SourceSafe é criticada devido à forma como Visual SourceSafe usa um mecanismo de acesso direto, baseado em arquivo que permite que qualquer cliente para modificar um arquivo no repositório depois de bloquear isso.Se uma máquina cliente trava no meio da atualização de um arquivo,
+ele pode corromper o arquivo. Muitos usuários do Visual SourceSafe mitigar este risco,
+fazendo uso de um utilitário fornecido pelo Visual SourceSafe que verifica o banco de dados para a corrupção e, 
+quando possível, corrige os erros que encontrar.
+
+                               Controle de Versão e Compartilhamento de Arquivo
 Visual SourceSafe permite o compartilhamento rápido e eficiente de arquivos entre projetos.A organização dos arquivos em 
 projetos torna a coordenação equipe intuitiva.Quando você adiciona um arquivo ao Visual SourceSafe, o arquivo é armazenado
 no banco de dados e disponibilizado para outros usuários.Alterações que tenham sido feitas para o arquivo são salvas para 
@@ -50,7 +35,7 @@ de um arquivo, fazer alterações em cópias de arquivos local e salvar novas ve
 arquivos está pronto para enviar, Visual SourceSafe torna fácil o compartilhamento e obtém versões diferentes do conjunto 
 de arquivos selecionado.
 
-Extensibilidade
+                                                  Extensibilidade
 Usando as interfaces de automação do Visual SourceSafe, você pode gravar extensões baseada no Visual SourceSafe conforme
 necessário em seu ambiente.Extensões são geralmente fornecidas na forma de aplicativos autônomos escritos para as interfaces
 de automação.Você também pode estender a funcionalidade do Visual SourceSafe escrevendo um suplemento ou plug-in que seja
