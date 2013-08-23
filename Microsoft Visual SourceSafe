@@ -8,6 +8,7 @@ GUI Presentation Manager), Windows, Windows NT, Mac e Unix. Quando a Microsoft c
 
 Microsoft Visual SourceSafe é uma versão de sistema de controle da Microsoft em nível de arquivo que permite que vários tipos de organizações possam trabalhar em várias versões do projeto ao mesmo tempo.Essa funcionalidade é particularmente benéfica em um ambiente de desenvolvimento de software, onde ele é usado ao manter versões de código paralelas.Entretanto, o produto pode ser usado para manter arquivos para qualquer outro tipo de equipe.
 
+                                                    
                                                     Visão geral
 
 SourceSafe não foi inicialmente uma fonte de gerenciamento de código de cliente / servidor,mas sim uma só SCM local. Arquitetonicamente, isso serve como uma força e uma fraqueza do projeto, dependendo do ambiente que é utilizado dentro Ele permite que um único usuário do sistema a ser criado com menos configuração do que a de alguns outros sistemas de SCM. Além disso, o processo de backup pode ser tão simples quanto copiar todo o conteúdo de uma única árvore de diretórios. Para ambientes multi-usuário, no entanto, ele não tem muitas características importantes encontrados em outros produtos do SCM, incluindo suporte para cometer atômica de vários arquivos (CVS tem o mesmo problema, uma vez que é construída sobre a RCS originais). SourceSafe herda sua funcionalidade compartilhada usando o acesso ao sistema de arquivo remoto direto a todos os arquivos no repositório. Isto, juntamente com um bug onde o código está usando a memória de idade após uma chamada para realocar, são fatores que contribuem para bancos de dados por SS às vezes vão mal.
@@ -19,6 +20,7 @@ Começando com VSS 2005, a Microsoft adicionou um modo de cliente-servidor. Nest
 Ajuda a proteger sua equipe de perdas acidentais de arquivo.Permite rastreamento a versões anteriores de um arquivo.
 Suporta branching, compartilhamento, mesclagem, e gerenciamento versões de arquivo.Rastreia versões de projetos inteiros.Rastreia código modular (um arquivo que está reutilizado, ou compartilhado, por vários projetos).
 
+                                                     
                                                      Crítica
 
 Estabilidade do Visual SourceSafe é criticada devido à forma como Visual SourceSafe usa um mecanismo de acesso direto, baseado em arquivo que permite que qualquer cliente para modificar um arquivo no repositório depois de bloquear isso.Se uma máquina cliente trava no meio da atualização de um arquivo,
