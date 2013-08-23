@@ -1,12 +1,20 @@
                                             Microsoft Visual SourceSafe
                                             
+                                           
+Microsoft Visual SourceSafe é uma versão de sistema de controle da Microsoft em nível de arquivo que permite que vários 
+tipos de organizações possam trabalhar em várias versões do projeto ao mesmo tempo.Essa funcionalidade é particularmente
+benéfica em um ambiente de desenvolvimento de software, onde ele é usado ao manter versões de código paralelas.Entretanto,
+o produto pode ser usado para manter arquivos para qualquer outro tipo de equipe.
+                                            
+                                           
+
                                                       História
 
 SourceSafe foi originalmente criado por uma empresa chamada One Tree Software. 
 One Tree SourceSafe havia passado por vários lançamentos em sua 1.x para 2.x ciclos, apoiando DOS, OS / 2 (com uma
 GUI Presentation Manager), Windows, Windows NT, Mac e Unix. Quando a Microsoft comprou OneTree em 1994,que imediatamente deixou de desenvolvimento em todas as versões, exceto para Windows. Microsoft "Visual SourceSafe 3.1", a 16-bit somente remarcadas versão, One Tree 3.0 Windows foi brevemente disponível antes de a Microsoft lançou a versão 4.0.
 
-Microsoft Visual SourceSafe é uma versão de sistema de controle da Microsoft em nível de arquivo que permite que vários tipos de organizações possam trabalhar em várias versões do projeto ao mesmo tempo.Essa funcionalidade é particularmente benéfica em um ambiente de desenvolvimento de software, onde ele é usado ao manter versões de código paralelas.Entretanto, o produto pode ser usado para manter arquivos para qualquer outro tipo de equipe.
+
 
                                                     Visão geral
 
@@ -41,3 +49,4 @@ necessário em seu ambiente.Extensões são geralmente fornecidas na forma de ap
 de automação.Você também pode estender a funcionalidade do Visual SourceSafe escrevendo um suplemento ou plug-in que seja
 compatível com o ambiente de desenvolvimento integrados (IDE) do programa de terceiros no qual será executado o pacote de 
 software.
+                                            
