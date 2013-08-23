@@ -26,7 +26,7 @@ ele pode corromper o arquivo. Muitos usuários do Visual SourceSafe mitigar este
 fazendo uso de um utilitário fornecido pelo Visual SourceSafe que verifica o banco de dados para a corrupção e, 
 quando possível, corrige os erros que encontrar.
 
-                               Controle de Versão e Compartilhamento de Arquivo
+                                  Controle de Versão e Compartilhamento de Arquivo
 Visual SourceSafe permite o compartilhamento rápido e eficiente de arquivos entre projetos.A organização dos arquivos em 
 projetos torna a coordenação equipe intuitiva.Quando você adiciona um arquivo ao Visual SourceSafe, o arquivo é armazenado
 no banco de dados e disponibilizado para outros usuários.Alterações que tenham sido feitas para o arquivo são salvas para 
