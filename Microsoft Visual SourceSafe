@@ -29,3 +29,10 @@ que qualquer usuário possa recuperar uma versão antiga a qualquer momento.Memb
 de um arquivo, fazer alterações em cópias de arquivos local e salvar novas versões no banco de dados.Quando um conjunto de 
 arquivos está pronto para enviar, Visual SourceSafe torna fácil o compartilhamento e obtém versões diferentes do conjunto 
 de arquivos selecionado.
+
+Extensibilidade
+Usando as interfaces de automação do Visual SourceSafe, você pode gravar extensões baseada no Visual SourceSafe conforme
+necessário em seu ambiente.Extensões são geralmente fornecidas na forma de aplicativos autônomos escritos para as interfaces
+de automação.Você também pode estender a funcionalidade do Visual SourceSafe escrevendo um suplemento ou plug-in que seja
+compatível com o ambiente de desenvolvimento integrados (IDE) do programa de terceiros no qual será executado o pacote de 
+software.
